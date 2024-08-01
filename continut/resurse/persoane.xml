@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+<persoana id="1">
+<nume>Popescu</nume>
+<prenume>Ion</prenume>
+<varsta>23</varsta>
+</persoana>
+<adresa>
+    <strada>Bujor</strada>
+    <numar>10</numar>
+    <localitate>Iasi</localitate>
+    <judet>Iasi</judet>
+    <tara>Romania</tara>
+</adresa>
+
+<persoana id="2">
+    <nume>Ionescu</nume>
+    <prenume>Gigi</prenume>
+    <varsta>40</varsta>
+    </persoana>
+    <adresa>
+        <strada>Crizantema</strada>
+        <numar>35</numar>
+        <localitate>Iasi</localitate>
+        <judet>Iasi</judet>
+        <tara>Romania</tara>
+    </adresa>
+    <CV>
+        <job>Inginer</job>
+        <experienta>20</experienta>
+        <proiecte>75</proiecte>
+    </CV>
+
+    <persoana id="3">
+        <nume>Popa</nume>
+        <prenume>Ionica</prenume>
+        <varsta>73</varsta>
+        </persoana>
+        <CV>
+            <job>Profesor</job>
+            <experienta>47</experienta>
+            <publicatii>163</publicatii>
+        </CV>
+        <adresa>
+            <strada>Trandafir</strada>
+            <numar>3</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        
+
+</persoane>

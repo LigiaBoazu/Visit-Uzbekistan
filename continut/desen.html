@@ -1,0 +1,37 @@
+<svg width="300" height="250">
+
+    <!--definire gradient-->>
+    <defs>
+        <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!--miscarea stanga-dreapta -->
+    <animateTransform id="moveFlag" attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="5s" repeatCount="indefinite" />
+
+     <!--suport steag maro-->
+     <rect x="250" y="100" width="20" height="150" fill="brown" />
+
+    <!--suport steag negru-->
+    <line x1="260" y1="100" x2="260" y2="250" stroke="black" stroke-width="4" />
+
+
+    <!--steag-->
+    <rect width="300" height="66.66" fill="lightblue" transform="translate(0,0)">
+        <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="5s" repeatCount="indefinite" />
+    </rect>
+
+    <rect y="66.66" width="300" height="66.66" fill="white" transform="translate(0,0)">
+        <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="5s" repeatCount="indefinite" />
+    </rect>
+
+    <rect y="133.32" width="300" height="66.66" fill="lightgreen" transform="translate(0,0)">
+        <animateTransform attributeName="transform" type="translate" values="0,0;50,0;0,0" dur="5s" repeatCount="indefinite" />
+    </rect>
+
+    <!--text steag-->
+    <text x="20" y="200" font-family="Arial" font-size="30" fill="url(#textGradient)"><animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0;1;0" />Uzbekistan</text>
+
+</svg>

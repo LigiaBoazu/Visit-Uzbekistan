@@ -1,0 +1,54 @@
+
+    <h1>Completează următorul formular pentru a aplica pentru viză</h1>
+  <form action="/submit_form" method="post">
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume"><br><br>
+
+      <label for="prenume">Prenume:</label>
+      <input type="text" id="prenume" name="prenume"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" required><br><br>
+
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex">
+      <option value="masculin">Masculin</option>
+      <option value="feminin">Feminin</option>
+      <option value="altul">Altul</option>
+      </select><br><br>
+
+      <label for="calatorie">Unde călătorești:</label>
+      <select id="calatorie" name="calatorie">
+          <option value="tashkent">Tashkent</option>
+          <option value="samarkand">Samarkand</option>
+          <option value="bukhara">Bukhara</option>
+          <option value="khiva">Khiva</option>
+      </select><br><br>
+
+      <label for="data-nastere">Data nașterii:</label>
+      <input type="date" id="data-nastere" name="data-nastere"><br><br>
+
+      <label for="emitere-pasaport">Dată emitere pașaport:</label>
+      <input type="date" id="emitere-pasaport" name="emitere-pasaport" min="2014-01-01" max="2024-01-01"><br><br>
+
+      <label for="expirare-pasaport">Dată expirare pașaport:</label>
+      <input type="date" id="expirare-pasaport" name="expirare-pasaport" min="2024-01-01" max="2034-01-01"><br><br>
+
+      <label for="durata-calatorie">Durata călătoriei:</label>
+      <input type="range" id="durata-calatorie" name="durata-calatorie" min="1" max="30"><br><br>
+
+      <label for="scop">Scopul călătoriei:</label><br>
+      <textarea id="scop" name="scop" rows="8" cols="50"></textarea><br><br>
+
+      <label for="buletin">Încarcă o fotografie a buletinului:</label>
+      <input type="file" id="buletin" name="buletin" accept="image/*"><br><br>
+
+      <input type="checkbox" id="conditii" name="conditii">
+      <label for="conditii">Sunt de acord cu condițiile</label><br><br>
+  </form>
+
+  <button type="submit" id="submit-btn" enabled>Înregistrează</button>
+</form>

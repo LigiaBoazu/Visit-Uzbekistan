@@ -1,0 +1,379 @@
+table {
+  border-collapse: collapse;
+  width: 25%;
+  color: rgb(19, 19, 154);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-color: rgb(19, 19, 154);
+}
+
+table, th, td {
+  border-color: rgb(19, 19, 154);
+}
+
+th, td {
+  padding: 10px; 
+  text-align: left; 
+  border-top: 3px double rgb(19, 19, 154);
+  border-bottom: 3px double rgb(19, 19, 154);
+  border-left: 3px double rgb(19, 19, 154);
+  border-right: 3px double rgb(19, 19, 154);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(19, 38, 134);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: darkblue;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  transition: background-image 0.5s;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 800px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-image: url('https://previews.123rf.com/images/dinozzaver/dinozzaver1704/dinozzaver170400381/76877276-colorful-facade-of-mosaic-and-tiles-of-egistan-mausoleum-samarkand-uzbekistan.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: background-image 0.5s; 
+}
+
+
+footer:hover {
+  background-image: url('https://previews.123rf.com/images/dinozzaver/dinozzaver1704/dinozzaver170400381/76877276-colorful-facade-of-mosaic-and-tiles-of-registan-mausoleum-samarkand-uzbekistan.jpg');
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article-background {
+  background-image: url('https://cdn.getyourguide.com/img/tour/7f4d63ea12323debc2770d92aac2180a2155e716e00d072aa7ec60e68e343393.jpeg/vertical_520_780.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px; 
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  font-size: small;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  margin-top: -20px;
+}
+
+.article-background h1,
+.article-background p {
+  font-size: 16px;
+}
+
+.section-container {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding-bottom: 50px; /* spatiu intre continut si footer  */
+  display: flex;
+}
+
+#myCanvas {
+  width: 300px; /* latime */
+  height: 300px; /* inaltime */
+  background-color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 800px; 
+  background: lightblue;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px; /* Spațiu între butoane */
+}
+
+nav ul li a {
+  display: block; /* fiecare buton pe alt rand */
+  padding: 10px 20px;
+  background-color: #1e5275; /* culoare butoane */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px; /* colturi rotunjite */
+}
+
+nav ul li a:hover {
+  background-color: #aec6e1; /* culoare de fundal la hover */
+}
+
+.background-despre {
+  background-image: url('https://mediaim.expedia.com/destination/1/8ee709ea6bacc7f4a3d0cf00593701a0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px; 
+  color: white; 
+}
+
+article .column h1 {
+  background-color: #add5ef; 
+  color: rgb(32, 56, 143); 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  text-align: center;
+  border: 3px solid rgb(32, 56, 143);
+}
+
+article .column p {
+  background-color: #f1f1f1; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  color:rgb(11, 23, 196)
+}
+
+.column img,
+.column iframe {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-background h1 {
+  background-color: #f7e5cf; 
+  padding: 20px; 
+  border-radius: 10px; 
+  text-align: center; 
+  color:rgb(238, 121, 12);
+  border: 3px solid rgb(238, 121, 12);
+}
+
+article p {
+  background-color: #f7e5cf; 
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  color:rgb(238, 121, 12);
+}
+
+.background-invat {
+  background-image: url('https://minzifatravel.com/wp-content/uploads/2021/11/230543662_360555535695277_9200578423423371247_n.jpg');
+  background-size: auto; /* pentru a asigura ca imaginea acopera intreaga sectiune body */
+  background-repeat: no-repeat; 
+}
+
+nav img {
+  display: block; 
+  margin: 20px auto; 
+}
+
+/*plic animat*/
+
+.letter-image {
+  position: relative; 
+  width: 200px;
+  height: 200px;
+  margin: 0 auto; 
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  transition: .4s;
+  
+  .body {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 200px;
+    border-color: transparent transparent #e95f55 transparent;
+    z-index: 2;
+  }
+  
+  .top-fold {
+    position: absolute;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 100px 0 100px;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-transition: transform .4s .4s, z-index .2s .4s;
+    -moz-transform-origin: 50% 0%;
+    -moz-transition: transform .4s .4s, z-index .2s .4s;
+    transform-origin: 50% 0%;
+    transition: transform .4s .4s, z-index .2s .4s;
+    border-color: #cf4a43 transparent transparent transparent;
+    z-index: 2;
+  }
+  
+  .back-fold {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    background: #cf4a43;
+    z-index: 0;
+  }
+  
+  .left-fold {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 100px;
+    border-color: transparent transparent transparent #e15349;
+    z-index: 2;
+  }
+  
+  .letter {
+    left: 20px;
+    bottom: 0px;
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    background: white;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: .4s .2s;
+    -moz-transition: .4s .2s;
+    transition: .4s .2s;
+    
+    .letter-border {
+      height: 10px;
+      width: 100%;
+      background: repeating-linear-gradient(
+        -45deg,
+        #cb5a5e,
+        #cb5a5e 8px,
+        transparent 8px,
+        transparent 18px
+      );
+    }
+    
+    .letter-title {
+      margin-top: 10px;
+      margin-left: 5px;
+      height: 10px;
+      width: 40%;
+      background: #cb5a5e;
+    }
+    .letter-context {
+      margin-top: 10px;
+      margin-left: 5px;
+      height: 10px;
+      width: 20%;
+      background: #cb5a5e;
+    }
+    
+    .letter-stamp {
+      margin-top: 30px;
+      margin-left: 120px;
+      border-radius: 100%;
+      height: 30px;
+      width: 30px;
+      background: #cb5a5e;
+      opacity: 0.3;
+    }
+  }
+}
+
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  transition: .4s;
+  transform: translateX(-50%);
+  -webkit-transition: .4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: .4s;
+  -moz-transform: translateX(-50%);
+  
+  border-radius: 100%;
+  background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+  .letter-image:hover {
+    .animated-mail {
+      transform: translateY(50px);
+      -webkit-transform: translateY(50px);
+      -moz-transform: translateY(50px);
+    }
+    
+    .animated-mail .top-fold {
+      transition: transform .4s, z-index .2s;
+      transform: rotateX(180deg);
+      -webkit-transition: transform .4s, z-index .2s;
+      -webkit-transform: rotateX(180deg);
+      -moz-transition: transform .4s, z-index .2s;
+      -moz-transform: rotateX(180deg);
+      z-index: 0;
+    }
+    
+    .animated-mail .letter {
+      height: 180px;
+    }
+    
+    .shadow {
+      width: 250px;
+    }
+  }

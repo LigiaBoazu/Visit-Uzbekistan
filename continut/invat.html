@@ -1,0 +1,45 @@
+<div class="section-container">
+      <div class="column">
+        <h1>Informații despre browser și sistemul de operare</h1>
+        <p id="currentDateTime"></p>
+        <p id="currentURL"></p>
+        <p id="browserInfo"></p>
+        <p id="osInfo"></p>
+
+        <h1>Desenați un dreptunghi pentru a ne asigura că nu sunteți bot</h1>
+        <label for="contourColor" style="color: white;">Culoare contur:</label>
+        <input type="color" id="contourColor" value="#ffffff"><br><br>
+        <label for="fillColor" style="color: white;">Culoare umplere:</label>
+        <input type="color" id="fillColor" value="#ffffff"><br><br>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid black;"></canvas>
+      </div>
+
+      <div class="column">
+        <h1>Tabel Cheltuieli</h1>
+        <label for="pozitie">Poziție (linie/coloană):</label>
+        <input type="text" id="pozitie"><br><br>
+        <label for="culoare">Culoare de fundal:</label>
+        <input type="color" id="culoare"><br><br>
+        <button onclick="inserareLinie()">Inserare Linie</button>
+        <button onclick="inserareColoana()">Inserare Coloană</button>
+
+        <h1>Tabel de Exemplu</h1>
+        <table id="tabel">
+          <tr>
+            <th>Categorie</th>
+            <th>Nume cheltuială</th>
+            <th>Sumă</th>
+          </tr>
+          <tr>
+            <td>Transport</td>
+            <td>Bilete Avion</td>
+            <td>1500</td>
+          </tr>
+          <tr>
+            <td>Cazare</td>
+            <td>Hotel Central Samarkand</td>
+            <td>700</td>
+          </tr>
+        </table>
+      </div>
+    </div>
